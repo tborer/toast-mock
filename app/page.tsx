@@ -4,6 +4,7 @@ import HealthScoreRing from "@/components/HealthScoreRing";
 import InsightCard from "@/components/InsightCard";
 import KpiCard from "@/components/KpiCard";
 import ActivationTracker from "@/components/ActivationTracker";
+import AiBanner from "@/components/AiBanner";
 
 export default function Dashboard() {
   const { restaurantName, period, healthScore, metrics } = mockInsights;
@@ -58,6 +59,9 @@ export default function Dashboard() {
                 </div>
               </div>
             </section>
+
+            {/* AI status banner */}
+            <AiBanner />
 
             {/* Insight cards */}
             <section>
